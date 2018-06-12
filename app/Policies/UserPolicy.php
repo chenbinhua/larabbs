@@ -19,7 +19,7 @@ class UserPolicy
         //
     }
 
-    public function upload(User $currentUser, User $user)
+    public function update(User $currentUser, User $user)
     {
         return $currentUser->id === $user->id;
     }
