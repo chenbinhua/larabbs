@@ -1,5 +1,7 @@
 <div class="panel panel-default">
     <div class="panel-body">
-        右边导航栏
+        <a href="{{ route('topics.create') }}" class="btn btn-success btn-block" aria-label="left Align">
+            <span class="glyphicon glyphicon-pencil"></span> 新建帖子
+        </a>
     </div>
 </div>
