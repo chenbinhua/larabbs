@@ -2270,7 +2270,7 @@ Clipboard = (function(superClass) {
           return;
         }
         if (!imageFile.name) {
-          imageFile.name = "Clipboard Image.png";
+          imageFile.name = "Clipboard Image11.png";
         }
         if (this.editor.triggerHandler('pasting', [imageFile]) === false) {
           return;
@@ -2453,7 +2453,7 @@ Simditor = (function(superClass) {
   Simditor.prototype.opts = {
     textarea: null,
     placeholder: '',
-    defaultImage: 'images/image.png',
+    defaultImage: '/images/image.png',
     params: {},
     upload: false,
     indentWidth: 40
