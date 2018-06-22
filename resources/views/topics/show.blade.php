@@ -48,9 +48,14 @@
                         <a href="{{ route('topics.edit', $topic->id) }}" class="btn btn-default btn-xs" role="button">
                             <i class="glyphicon glyphicon-edit"></i> 编辑
                         </a>
-                        <a href="#" class="btn btn-default btn-xs" role="button">
+                        
+                        <form action="{{ route('topics.destroy', $topic->id) }}" method="post" accept-charset="UTF-8">
+                            {{ csrf_field() }}
+                            {{ method_field('DELETE') }}
+                        <button class="btn btn-default btn-xs pull-left" type="submit" style="margin-left: 6px">
                             <i class="glyphicon glyphicon-trash"></i> 删除
-                        </a>
+                        </button>
+                        </form>
                     </div>
 
                 </div>
